@@ -34,6 +34,10 @@ variable "subnet_names" {
   default     = ["subnet1", "subnet2", "subnet3"]
 }
 
+variable "vnet_service_endpoints" {
+  type = "map"
+}
+
 variable "nsg_ids" {
   description = "A map of subnet name to Network Security Group IDs"
   type        = "map"
